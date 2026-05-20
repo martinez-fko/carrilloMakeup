@@ -28,28 +28,28 @@ class PermissionSeeder extends Seeder
         Permission::updateOrCreate(
             ['id' => PermissionsConst::LIST_USERS],
             [
-                'name' => 'users.view',
+                'name' => 'user.view',
                 'description' => 'Ver usuarios',
             ]
         );
         Permission::updateOrCreate(
             ['id' => PermissionsConst::CREATE_USER],
             [
-                'name' => 'users.create',
+                'name' => 'user.create',
                 'description' => 'Crear usuarios',
             ]
         );
         Permission::updateOrCreate(
             ['id' => PermissionsConst::EDIT_USER],
             [
-                'name' => 'users.edit',
+                'name' => 'user.edit',
                 'description' => 'Editar usuarios',
             ]
         );
         Permission::updateOrCreate(
             ['id' => PermissionsConst::TOGGLE_USER_ACTIVE],
             [
-                'name' => 'users.active',
+                'name' => 'user.active',
                 'description' => 'Activar/Desact usuarios',
             ]
         );
@@ -58,21 +58,21 @@ class PermissionSeeder extends Seeder
         Permission::updateOrCreate(
             ['id' => PermissionsConst::LIST_ROLES],
             [
-                'name' => 'roles.view',
+                'name' => 'role.view',
                 'description' => 'Ver roles',
             ]
         );
         Permission::updateOrCreate(
             ['id' => PermissionsConst::CREATE_ROLES],
             [
-                'name' => 'roles.create',
+                'name' => 'role.create',
                 'description' => 'Crear roles',
             ]
         );
         Permission::updateOrCreate(
             ['id' => PermissionsConst::EDIT_ROLES],
             [
-                'name' => 'roles.edit',
+                'name' => 'role.edit',
                 'description' => 'Editar roles',
             ]
         );

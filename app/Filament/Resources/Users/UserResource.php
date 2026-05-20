@@ -8,7 +8,6 @@ use Filament\Tables\Table;
 use Filament\Schemas\Schema;
 use Filament\Resources\Resource;
 use Filament\Support\Icons\Heroicon;
-use Filament\Notifications\Notification;
 use App\Filament\Resources\Users\Pages\EditUser;
 use App\Filament\Resources\Users\Pages\ListUsers;
 use App\Filament\Resources\Users\Pages\CreateUser;
