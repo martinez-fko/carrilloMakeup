@@ -51,6 +51,7 @@ class WidgetUsers extends StatsOverviewWidget
             )
             ->description('Usuarios registrados')
             ->descriptionIcon('heroicon-m-users')
+            ->url(route('filament.admin.resources.users.index'))
             ->extraAttributes([
                 'class' => 'bg-green-500 text-white',
             ])

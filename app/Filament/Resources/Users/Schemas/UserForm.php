@@ -28,9 +28,24 @@ class UserForm
                 TextInput::make('password')
                     ->label('Contraseña')
                     ->password()
-                    ->required(),
+                    ->minLength(8)
+                    ->required(fn (string $operation): bool => $operation === 'create')
+                    ->dehydrated(fn ($state) => filled($state))
+                    ->dehydrateStateUsing(fn ($state) => bcrypt($state))
+                    ->hint(fn ($operation) =>
+                            $operation === 'edit'
+                                ? 'Déjalo vacío para mantener la contraseña actual'
+                                : null
+                    ),
+                TextInput::make('password_confirmation')
+                    ->password()
+                    ->same('password')
+                    ->dehydrated(false)
+                    ->required(fn ($operation) => $operation === 'create'),
                 Toggle::make('active')
-                    ->label('Activo'),
+                    ->label('Activo')
+                    ->default(true)
+                    ->inline(false),
                 Select::make('role_id')
                     ->label('Rol')
                     ->options(Role::query()->pluck('name', 'id'))

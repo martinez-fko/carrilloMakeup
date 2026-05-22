@@ -26,7 +26,11 @@ class RolesTable
                 //
             ])
             ->recordActions([
-                EditAction::make(),
+                EditAction::make()->hidden(fn ($record) =>
+                    in_array($record->name, [
+                        'Administrador',
+                    ])
+                ),
                 DeleteAction::make()->hidden(fn ($record) =>
                     in_array($record->name, [
                         'Administrador',
