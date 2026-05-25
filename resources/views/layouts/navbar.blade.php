@@ -11,15 +11,15 @@
 
         <!-- Desktop links -->
         <div class="hidden md:flex flex-1 items-center justify-center gap-10">
-            <a href="#inicio" class="font-medium text-gray-700 transition hover:text-pink-500">
+            <a href="{{route('home')}}" class="font-medium text-gray-700 transition hover:text-pink-500">
                 Inicio
             </a>
 
-            <a href="#servicios" class="font-medium text-gray-700 transition hover:text-pink-500">
+            <a href="{{route('services')}}" class="font-medium text-gray-700 transition hover:text-pink-500">
                 Servicios
             </a>
 
-            <a href="#galeria" class="font-medium text-gray-700 transition hover:text-pink-500">
+            <a href="{{route('gallery')}}" class="font-medium text-gray-700 transition hover:text-pink-500">
                 Galería
             </a>
         </div>
@@ -51,15 +51,15 @@
 
         <div class="flex flex-col items-center gap-4">
 
-            <a href="#inicio" class="font-medium text-gray-700 hover:text-pink-500">
+            <a href="{{route('home')}}" class="font-medium text-gray-700 hover:text-pink-500">
                 Inicio
             </a>
 
-            <a href="#servicios" class="font-medium text-gray-700 hover:text-pink-500">
+            <a href="{{route('services')}}" class="font-medium text-gray-700 hover:text-pink-500">
                 Servicios
             </a>
 
-            <a href="#galeria" class="font-medium text-gray-700 hover:text-pink-500">
+            <a href="{{route('gallery')}}" class="font-medium text-gray-700 hover:text-pink-500">
                 Galería
             </a>
 

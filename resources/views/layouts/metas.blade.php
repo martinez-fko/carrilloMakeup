@@ -1,7 +1,7 @@
   <meta charset="UTF-8">
-  <meta name="description" content="Desarrollador Freelancer. Creador de Sitios y landing pages." >
-  <meta name="keywords" content="fcomtzdev, desarrollador freelancer, landig pages, creación de sitios administrativos" >
-  <meta name="author" content="fcomtzdev" >
+  <meta name="description" content="Maquillaje profesional en Villahermosa para bodas, XV años, graduaciones y eventos especiales. Looks elegantes, duraderos y personalizados. Agenda tu cita." >
+  <meta name="keywords" content="maquillaje profesional, makeup artist, maquillaje para novia, maquillaje social, maquillaje XV años, beauty studio, maquillaje Villahermosa" >
+  <meta name="author" content="Lizbeth Carrillo" >
   <meta name="robots" content="index, follow" >
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 

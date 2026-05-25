@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Storage;
 
 class Promotion extends Model
 {
@@ -16,4 +17,15 @@ class Promotion extends Model
         'end_date',
         'sort_order',
     ];
+
+    protected static function booted()
+    {
+        static::deleting(function ($promotion) {
+
+            if ($promotion->image_path) {
+                Storage::disk('public')->delete($promotion->image_path);
+            }
+
+        });
+    }
 }

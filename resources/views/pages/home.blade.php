@@ -25,7 +25,7 @@ Inicio | Carrillo MakeUp
         <div class="max-w-3xl text-center text-white">
 
             <p class="mb-4 text-sm uppercase tracking-[0.3em] text-white/80">
-                Estética Premium
+                Maquillaje Premium
             </p>
 
             <h1 class="mb-6 text-4xl font-bold leading-tight sm:text-5xl md:text-7xl">
